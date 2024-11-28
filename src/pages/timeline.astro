@@ -1,0 +1,213 @@
+---
+import { TimelineContainer } from '@/components/timeline/TimelineContainer'
+import { TimelineEntry } from '@/components/timeline/TimelineEntry'
+import Section from '@/components/ui/Section.astro'
+import Base from '@/layouts/Base.astro'
+import Hero from '@/partials/Hero.astro'
+---
+
+<Base title="Timeline">
+  <Hero />
+
+  <Section title="Education">
+    <TimelineContainer>
+      <TimelineEntry
+        title="M. Sc. Cyber Security & Privacy"
+        subTitle="Hochschule Bonn-Rhein-Sieg"
+        dateFrom="04.2023"
+        dateTo="Present"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Introduction to Cybercrime</li>
+          <li>IT-Security of Critical Infrastructure</li>
+          <li>
+            Advanced Concepts for Information Security and IT Risk Management
+          </li>
+          <li>Identification and Privacy-Enhancing Technologies</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="M. Sc. Applied IT-Security, part-time distance learning course (not completed)"
+        subTitle="International School of IT Security (is-its) in cooperation with Ruhr-Universität-Bochum"
+        dateFrom="10.2022"
+        dateTo="03.2024"
+      >
+        <p class="font-normal leading-none text-gray-500 dark:text-gray-500">
+          Part-time distance learning course
+        </p>
+        <br />
+        <p class="list-disc text-muted-foreground">
+          <br />
+          <strong> Production of communication systems for trains: </strong>
+        </p>
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Computer Science for IT Security</li>
+          <li>Introduction to BSI IT-Grundschutz and ISO 27001</li>
+          <li>Introduction to Cryptography</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="B. Eng. Electrical Engineering and Information Technology"
+        subTitle="Hochschule Düsseldorf"
+        dateFrom="09.2018"
+        dateTo="08.2022"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>
+            <strong>Fundamentals:</strong> Electrical Engineering, Computer Science,
+            Circuit Design
+          </li>
+          <li>
+            <strong>Specialization Computer Science:</strong> Operating Systems,
+            Network Security,<br /> Embedded Systems, Software Engineering
+          </li>
+          <li>
+            <strong>Thesis:</strong> Development of a BACnet-Specific Analysis of
+            Wireshark Captures
+          </li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="Elektroniker für Automatisierungstechnik"
+        subTitle="Siemens Professional Education (SPE), Düsseldorf"
+        dateFrom="09.2018"
+        dateTo="08.2021"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Control Technology</li>
+          <li>SPS Programming in TIA</li>
+          <li>Construction of control cabinet</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="Information Technology Assistant"
+        subTitle="Georg-Simon-Ohm-Berufskolleg"
+        dateFrom="08.2015"
+        dateTo="09.2018"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Programming in C# with .NET</li>
+          <li>Microcontroller programming using C</li>
+          <li>
+            Network and operating systems: planning and configuring local
+            networks, subnetting VLANs
+          </li>
+          <li>Database management: relational modeling, SQL queries</li>
+          <li>Server-based services: DNS, DHCP, and other web services</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="General University Entrance Qualification with IT Focus"
+        subTitle="Georg-Simon-Ohm-Berufskolleg"
+        dateFrom="08.2015"
+        dateTo="06.2018"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>
+            <strong>Major subjects:</strong> Mathematics and Technical Computer Science
+          </li>
+          <li>
+            <strong>Supplementary subjects:</strong> Computer Science, and Electrical
+            Engineering
+          </li>
+        </ul>
+      </TimelineEntry>
+    </TimelineContainer>
+  </Section>
+
+  <Section title="Experience">
+    <TimelineContainer>
+      <TimelineEntry
+        title="Siemens AG - Smart Infrastructure - Building Automation"
+        subTitle="Sales - Bid and Proposal-Manager"
+        dateFrom="08.2022"
+        dateTo="04.2024"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Planning of building automation and HVAC systems</li>
+          <li>Evaluation of subcontractor offers</li>
+          <li>Calculation and negotiation of proposals</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="Siemens AG - Smart Infrastructure - Fire, Safety and Security"
+        subTitle="Dual Study Program in Electrical Engineering and Information Technology"
+        dateFrom="09.2018"
+        dateTo="08.2022"
+      >
+        <p class="list-disc text-muted-foreground">
+          <strong>Supporting activities in project management and sales:</strong
+          >
+        </p>
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Cost control and budget management</li>
+          <li>Calculation and negotiation of proposals</li>
+          <li>Coordination of orders and deliveries</li>
+        </ul>
+      </TimelineEntry>
+    </TimelineContainer>
+  </Section>
+
+  <Section title="Internships">
+    <TimelineContainer>
+      <TimelineEntry
+        title="DKS mbH - Dienstleistungsgesellschaft für Kommunikationsanlagen des Stadt- und Regionalverkehrs mbH"
+        subTitle="Duration: 7 weeks"
+        dateFrom="07.2018"
+        dateTo="09.2018"
+      >
+        <p class="list-disc text-muted-foreground">
+          <strong> Production of communication systems for trains: </strong>
+        </p>
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Intercom Systems</li>
+          <li>Video Surveillance Systems</li>
+          <li>Electronic Rear-View Mirrors</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="Erasmus Internship in Marseille, France - First Level IT-Support"
+        subTitle="Hôpital de la Timone - Duration: 4 Weeks"
+        dateFrom="04.2017"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>
+            Receiving and handling IT support requests from hospital staff
+          </li>
+          <li>
+            Providing basic training and guidance to staff on IT-related topics
+            and application usage
+          </li>
+          <li>
+            Maintenance of printers, including troubleshooting, routine upkeep,
+            and repair coordination
+          </li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="WDR Köln - First Level IT-Support "
+        subTitle="Duration: 2 Weeks"
+        dateFrom="04.2014"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>
+            Receiving and documenting IT support requests from employees via
+            ticketing systems
+          </li>
+          <li>
+            Providing initial troubleshooting and resolving common IT issues
+          </li>
+          <li>Escalating complex technical issues to Second Level Support</li>
+        </ul>
+      </TimelineEntry>
+    </TimelineContainer>
+  </Section>
+</Base>

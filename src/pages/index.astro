@@ -1,0 +1,58 @@
+---
+import ProjectCard from '@/components/ui/ProjectCard.astro'
+import ProjectSkills from '@/components/ui/ProjectSkills.astro'
+import Section from '@/components/ui/Section.astro'
+import SkillLayout from '@/components/ui/SkillLayout.astro'
+import Base from '@/layouts/Base.astro'
+import Hero from '@/partials/Hero.astro'
+
+const itsecurity = ['ISO 27001', 'BSI IT-Grundschutz', 'B3S']
+const development = ['C#', 'LUA', 'VBA']
+const tools = ['Excel', 'SAP SBO', 'Wireshark']
+const hobbys = [
+  'Climbing / Bouldering',
+  'Cycling',
+  'Paragliding',
+  'Photography',
+]
+---
+
+<Base title="Home">
+  <Hero />
+
+  <Section title="About">
+    <p class="text-muted-foreground text-justify">
+      Welcome to my personal homepage! My journey in IT security started back in
+      high school when I first came in touch with computer science and
+      electrical engineering. Having completed my training as an Electronics
+      Technician for Automation Technology and earned my Bachelor’s degree in
+      Electrical and Information Technology, I am now pursuing a Master's
+      program in Cybersecurity and Privacy.
+      <br />
+      My experience in building automation and HVAC sharpened my focus on IT security
+      standards for critical infrastructure. I am currently seeking master’s thesis
+      topics, with a particular interest in regulatory standards such as ISO 27001
+      and their application to building safety and security.
+    </p>
+  </Section>
+
+  <Section title="Interests">
+    <SkillLayout title="Languages" skills={itsecurity} />
+    <SkillLayout title="Frontend" skills={development} />
+    <SkillLayout title="Backend" skills={tools} />
+    <SkillLayout title="Cloud Providers" skills={hobbys} />
+  </Section>
+
+  <Section title="Looking for">
+    <div class="flex w-full flex-col gap-y-4">
+      <ProjectCard heading="A Master's Thesis Topic">
+        For example, identifying conflicts of interest and synergies between
+        ISO27001 and other standards in the building safety and security.
+        <ProjectSkills
+          slot="tags"
+          skills={['ISO 27001', 'BSI IT-Grundschutz', 'B3S']}
+        />
+      </ProjectCard>
+    </div>
+  </Section>
+</Base>
