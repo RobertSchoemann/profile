@@ -14,9 +14,9 @@ import icon from 'astro-icon'
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://robertschoemann.github.io',
   base: '/profile/',
   trailingSlash: "always",
-  site: 'https://robertschoemann.github.io',
   integrations: [
     tailwind(),
     react(),
