@@ -15,7 +15,7 @@ import icon from 'astro-icon'
 // https://astro.build/config
 export default defineConfig({
   base: '/profile/',
-  trailingSlash: "never",
+  trailingSlash: "always",
   site: 'https://robertschoemann.github.io',
   integrations: [
     tailwind(),
