@@ -16,7 +16,7 @@ import icon from 'astro-icon'
 export default defineConfig({
   site: 'https://robertschoemann.github.io',
   base: '/profile/',
-  trailingSlash: "always",
+  trailingSlash: 'ignore',
   integrations: [
     tailwind(),
     react(),

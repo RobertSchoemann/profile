@@ -9,12 +9,42 @@ import Hero from '@/partials/Hero.astro'
 <Base title="Timeline">
   <Hero />
 
+  <Section title="Certifications">
+    <TimelineContainer>
+      <TimelineEntry
+        title="IT Security Manager"
+        subTitle="TÜV Rheinland Certified Qualification"
+        dateFrom="04.2025"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>ISMS reporting</li>
+          <li>Internal audits and management review</li>
+          <li>Management review</li>
+          <li>Forms of audits & Certification audit</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
+        title="IT Security Officer (IT-Security-Beauftragter)"
+        subTitle="TÜV Rheinland Certified Qualification"
+        dateFrom="03.2025"
+      >
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Legal foundations</li>
+          <li>Organization of information security</li>
+          <li>System & network security</li>
+          <li>ISO 27001 & BSI Standard</li>
+        </ul>
+      </TimelineEntry>
+    </TimelineContainer>
+  </Section>
+
   <Section title="Education">
     <TimelineContainer>
       <TimelineEntry
         title="M. Sc. Cyber Security & Privacy"
         subTitle="Hochschule Bonn-Rhein-Sieg"
-        dateFrom="04.2023"
+        dateFrom="04.2024"
         dateTo="Present"
       >
         <ul class="ml-4 list-disc text-muted-foreground">
@@ -28,17 +58,28 @@ import Hero from '@/partials/Hero.astro'
       </TimelineEntry>
 
       <TimelineEntry
+        title="Erasmus Exchange Semester in Trondheim, Norway"
+        subTitle="Norwegian University of Science and Technology (NTNU)"
+        dateFrom="08.2025"
+        dateTo="12.2025"
+      >
+        <p class="list-disc text-muted-foreground">
+          <strong> Successfully completed modules: </strong>
+        </p>
+        <ul class="ml-4 list-disc text-muted-foreground">
+          <li>Critical Infrastructure Security</li>
+          <li>Digital Economics</li>
+          <li>Introduction to Norwegian</li>
+        </ul>
+      </TimelineEntry>
+
+      <TimelineEntry
         title="M. Sc. Applied IT-Security, part-time distance learning course (not completed)"
-        subTitle="International School of IT Security (is-its) in cooperation with Ruhr-Universität-Bochum"
+        subTitle="International School of IT Security (is-its) in cooperation with Ruhr-Universität-Bochum "
         dateFrom="10.2022"
         dateTo="03.2024"
       >
-        <p class="font-normal leading-none text-gray-500 dark:text-gray-500">
-          Part-time distance learning course
-        </p>
-        <br />
         <p class="list-disc text-muted-foreground">
-          <br />
           <strong> Successfully completed modules: </strong>
         </p>
         <ul class="ml-4 list-disc text-muted-foreground">
@@ -195,12 +236,12 @@ import Hero from '@/partials/Hero.astro'
       <TimelineEntry
         title="WDR Köln - First Level IT-Support "
         subTitle="Duration: 2 Weeks"
-        dateFrom="04.2014"
+        dateFrom="05.2014"
       >
         <ul class="ml-4 list-disc text-muted-foreground">
           <li>
             Receiving and documenting IT support requests from employees via
-            ticketing systems
+            ticking systems
           </li>
           <li>
             Providing initial troubleshooting and resolving common IT issues
